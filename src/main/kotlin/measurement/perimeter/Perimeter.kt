@@ -2,6 +2,11 @@ package measurement.perimeter
 
 import measurement.shapes.*
 
+/*
+* This class contains functions that handles all related calculations
+* of perimeters of shapes. It only contains base shapes and not derived shapes.
+* Some of the base shapes include: Square, Rectangle, Circle, Sector, Triangle
+* */
 class Perimeter : Shape {
     override fun calculateSquare(square: Square): Square {
         return Square(

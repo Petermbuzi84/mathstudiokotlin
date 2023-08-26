@@ -3,6 +3,11 @@ package measurement.area.shapes
 import measurement.shapes.*
 import kotlin.math.sqrt
 
+/*
+* This class contains functions that handles all related calculations
+* of areas of shapes. It only contains base shapes and not derived shapes.
+* Some of the base shapes include: Square, Rectangle, Circle, Sector, Triangle
+* */
 class Area : Shape {
     override fun calculateSquare(square: Square): Square {
         return Square(
