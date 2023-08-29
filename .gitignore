@@ -31,3 +31,4 @@ bin/
 ### JETBRAINS ###
 .idea
 out
+MathStudio.iml

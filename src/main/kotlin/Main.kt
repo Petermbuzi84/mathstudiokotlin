@@ -1,3 +1,6 @@
+import measurement.perimeter.Perimeter
+import measurement.shapes.basic.Sector
+
 fun measurementQuestion() {
     val angle = 105.0
     val radius = 8.4
@@ -7,9 +10,12 @@ fun measurementQuestion() {
     * of the major arc.
     * */
 
-    // put your code here
+    val majorAngle = 360 - angle
+    val sector = Sector(angle = majorAngle, radius = radius)
+    val perimeter = Perimeter()
+    val results = perimeter.calculateSector(sector)
 
-    println() // print the answer here = the solution is 37.4 cm
+    println(results.length) // print the answer here = the solution is 37.4 cm
 }
 
 fun main() {

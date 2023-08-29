@@ -1,4 +1,4 @@
-package measurement.shapes
+package measurement.shapes.basic
 
 /*
 * This data class describes some of the variables and other attributes

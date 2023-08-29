@@ -1,10 +1,9 @@
 package measurement.area
 
-import measurement.area.shapes.Area
-import measurement.shapes.Circle
-import measurement.shapes.Rectangle
-import measurement.shapes.Sector
-import measurement.shapes.Square
+import measurement.shapes.basic.Circle
+import measurement.shapes.basic.Rectangle
+import measurement.shapes.basic.Sector
+import measurement.shapes.basic.Square
 import org.junit.Test
 
 class AreaTest {

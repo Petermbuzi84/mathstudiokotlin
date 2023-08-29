@@ -1,6 +1,6 @@
 package measurement.perimeter
 
-import measurement.shapes.*
+import measurement.shapes.basic.*
 
 /*
 * This class contains functions that handles all related calculations
@@ -8,11 +8,19 @@ import measurement.shapes.*
 * Some of the base shapes include: Square, Rectangle, Circle, Sector, Triangle
 * */
 class Perimeter : Shape {
-    override fun calculateSquare(square: Square): Square {
-        return Square(
-            perimeter = 4 * square.length,
-            length = square.perimeter / 4
+    override fun calculateCircle(circle: Circle): Circle {
+        return Circle(
+            circumference = (2 * 22 * circle.radius) / 7,
+            radius = (circle.circumference * 7) / (2 * 22)
         )
+    }
+
+    override fun calculateParallelogram(parallelogram: Parallelogram): Parallelogram {
+        TODO("Not yet implemented")
+    }
+
+    override fun calculatePolygon(polygon: Polygon): Polygon {
+        TODO("Not yet implemented")
     }
 
     override fun calculateRectangle(rectangle: Rectangle): Rectangle {
@@ -23,11 +31,12 @@ class Perimeter : Shape {
         )
     }
 
-    override fun calculateCircle(circle: Circle): Circle {
-        return Circle(
-            circumference = (2 * 22 * circle.radius) / 7,
-            radius = (circle.circumference * 7) / (2 * 22)
-        )
+    override fun calculateRhombus(rhombus: Rhombus): Rhombus {
+        TODO("Not yet implemented")
+    }
+
+    override fun calculateRightTriangle(rightTriangle: RightTriangle): RightTriangle {
+        TODO("Not yet implemented")
     }
 
     override fun calculateSector(sector: Sector): Sector {
@@ -54,5 +63,16 @@ class Perimeter : Shape {
                 else -> sector.angle
             }
         )
+    }
+
+    override fun calculateSquare(square: Square): Square {
+        return Square(
+            perimeter = 4 * square.length,
+            length = square.perimeter / 4
+        )
+    }
+
+    override fun calculateTriangle(triangle: Triangle): Triangle {
+        TODO("Not yet implemented")
     }
 }

@@ -1,4 +1,4 @@
-package measurement.shapes
+package measurement.shapes.basic
 
 /*
 * The interface describes how the shapes classes should implement
@@ -11,11 +11,21 @@ interface Shape {
         return action()
     }
 
-    fun calculateSquare(square: Square): Square
+    fun calculateCircle(circle: Circle): Circle
+
+    fun calculateParallelogram(parallelogram: Parallelogram): Parallelogram
+
+    fun calculatePolygon(polygon: Polygon): Polygon
 
     fun calculateRectangle(rectangle: Rectangle): Rectangle
 
-    fun calculateCircle(circle: Circle): Circle
+    fun calculateRhombus(rhombus: Rhombus): Rhombus
+
+    fun calculateRightTriangle(rightTriangle: RightTriangle): RightTriangle
 
     fun calculateSector(sector: Sector): Sector
+
+    fun calculateSquare(square: Square): Square
+
+    fun calculateTriangle(triangle: Triangle): Triangle
 }
